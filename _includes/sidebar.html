@@ -9,23 +9,29 @@
   </div>
 
   <nav class="sidebar-nav">
-    <a class="sidebar-nav-item{% if page.title == "Home" %} active{% endif %}" href="/">Home</a>
+    <ul style="list-style-type: none">
+      <li><a class="sidebar-nav-item" href="/">Home</a></li>
+      <li><a class="sidebar-nav-item">Intro</a></li>
+      <ul style="list-style-type: none">
+        <li><a class="sidebar-nav-item" href="/intro/walter.html">Walter</a></li>
+        <li><a class="sidebar-nav-item" href="/intro/walter_server_and_agent.html">Walter Server and Agent</a></li>
+      </ul>
+      <li><a class="sidebar-nav-item">Getting Started</a></li>
+      <ul style="list-style-type: none">
+        <li><a class="sidebar-nav-item" href="/started/walter.html">Walter</a></li>
+        <li><a class="sidebar-nav-item" href="/started/walter_server_and_agent.html">Walter Server and Agent</a></li>
+      </ul>
+      <li><a class="sidebar-nav-item">Docs</a></li>
+      <ul style="list-style-type: none">
+        <li><a class="sidebar-nav-item" href="/docs/walter.html">Walter</a></li>
+        <li><a class="sidebar-nav-item" href="/docs/walter_server_and_agent.html">Walter Server and Agent</a></li>
+      </ul>
 
-    {% comment %}
-      The code below dynamically generates a sidebar nav of pages with
-      `layout: page` in the front-matter. See readme for usage.
-    {% endcomment %}
+      <li><a class="sidebar-nav-item" href="/download.html">Download</a></li>
+      <li><a class="sidebar-nav-item" href="">Demo</a></li>
 
-    {% assign pages_list = site.pages %}
-    {% for node in pages_list %}
-      {% if node.title != null %}
-        {% if node.layout == "page" %}
-          <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ node.url }}">{{ node.title }}</a>
-        {% endif %}
-      {% endif %}
-    {% endfor %}
-
-    <a class="sidebar-nav-item" href="https://github.com/walter-cd">GitHub project</a>
+      <li><a class="sidebar-nav-item" href="https://github.com/walter-cd">GitHub project</a></li>
+    </ul>
   </nav>
 
   <div class="sidebar-item">
