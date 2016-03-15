@@ -7,20 +7,26 @@
 
   <title>
     {% if page.title %}
-      {{ page.title }} &middot; {{ site.title }}
+    {{ page.title }} &middot; {{ site.title }}
     {% else %}
-      {{ site.title }} &middot; {{ site.tagline }}
+    {{ site.title }} &middot; {{ site.tagline }}
     {% endif %}
   </title>
 
   <!-- CSS -->
-  <link rel="stylesheet" href="/public/css/poole.css">
-  <link rel="stylesheet" href="/public/css/syntax.css">
-  <link rel="stylesheet" href="/public/css/lanyon.css">
+  <link rel="stylesheet" href="{{base}}/resources/css/bootstrap.min.css">
+  <link rel="stylesheet" href="{{base}}/resources/css/font-awesome.min.css">
+  <link rel="stylesheet" href="{{base}}/resources/css/walter.css">
   <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700|PT+Sans:400">
+  <link href='https://fonts.googleapis.com/css?family=Montserrat|Quattrocento+Sans' rel='stylesheet' type='text/css'>
+
+  <!-- JS -->
+  <script src="{{base}}/resources/js/jquery.js"></script>
+  <script src="{{base}}/resources/js/jquery.easing.min.js"></script>
+  <script src="{{base}}/resources/js/anchorific.min.js"></script>
+  <script src="{{base}}/resources/js/walter.js"></script>
 
   <!-- Icons -->
-  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-144-precomposed.png">
-  <link rel="shortcut icon" href="/public/favicon.ico">
+  <link rel="shortcut icon" href="{{base}}/resources/images/favicon.png">
 
 </head>

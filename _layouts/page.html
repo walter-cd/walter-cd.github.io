@@ -2,7 +2,27 @@
 layout: default
 ---
 
-<div class="page">
-  <h1 class="page-title">{{ page.title }}</h1>
-  {{ content }}
+{% include base.html %}
+
+<div class="walter-side-bar">
+  <nav class="anchorific"></nav><!-- the table of contents is rendered here -->
+  <div class="walter-fixed-footer">&copy; {{ site.time | date: '%Y' }}. All rights reserved.</div>
 </div>
+<div class="walter-page-content">
+  <div class="walter-content">
+    {{ content }}
+  </div>
+</div>
+
+<script>
+  $('.walter-page-content').anchorific({
+    navigation: '.anchorific', // position of navigation
+    speed: 400, // speed of sliding back to top
+    anchorClass: 'anchor', // class of anchor links
+    anchorText: '', // prepended or appended to anchor headings
+    top: '.top', // back to top button or link class
+    spy: true, // scroll spy
+    position: 'prepend', // position of anchor text
+    spyOffset: 50 // specify heading offset for spy scrolling
+  });
+</script>

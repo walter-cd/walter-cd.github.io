@@ -1,0 +1,361 @@
+body {
+  width: 100%;
+  height: 100%;
+  font-family: "Quattrocento Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+h1 {
+  padding-bottom: 6px;
+  margin-bottom: 30px !important;
+  margin-top: 40px;
+  border-bottom: 1px solid #eeeeee;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0 0 12px;
+  text-transform: uppercase;
+  /*font-family: "PT Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;*/
+  font-weight: 500;
+  letter-spacing: 1px;
+  color: #503775;
+}
+
+p {
+  margin: 0 0 25px;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+@media (min-width: 768px) {
+  p {
+    margin: 0 0 35px;
+    font-size: 20px;
+    line-height: 1.6;
+  }
+}
+
+a {
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+a:hover,
+a:focus {
+  text-decoration: none;
+  color: #1d9b6c;
+}
+
+.light {
+  font-weight: 400;
+}
+
+.navbar-brand {
+  background-image: url(../images/walter-logo-inverse.png);
+  background-size: auto 46px;
+  background-repeat: no-repeat;
+  width: 200px;
+}
+
+.navbar-custom {
+  margin-bottom: 0;
+  text-transform: uppercase;
+  font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: #6E5698;
+  border: none;
+  border-width: 0 0 0 0;
+}
+
+.navbar-custom .navbar-brand {
+  font-weight: 700;
+}
+
+.navbar-custom .navbar-brand:focus {
+  outline: 0;
+}
+
+.navbar-custom .navbar-brand .navbar-toggle {
+  padding: 4px 6px;
+  font-size: 16px;
+  color: #fff;
+}
+
+.navbar-custom .navbar-brand .navbar-toggle:focus,
+.navbar-custom .navbar-brand .navbar-toggle:active {
+  outline: 0;
+}
+
+.navbar-custom a {
+  color: #fff;
+}
+
+.navbar-custom .nav li a {
+  -webkit-transition: background .3s ease-in-out;
+  -moz-transition: background .3s ease-in-out;
+  transition: background .3s ease-in-out;
+}
+
+.navbar-custom .nav li a:hover {
+  outline: 0;
+  color: rgba(255, 255, 255, .8);
+  background-color: transparent;
+}
+
+.navbar-custom .nav li a:focus,
+.navbar-custom .nav li a:active {
+  outline: 0;
+  background-color: transparent;
+}
+
+.navbar-custom .nav li.active {
+  outline: 0;
+}
+
+.navbar-custom .nav li.active a {
+  background-color: rgba(255, 255, 255, .3);
+}
+
+.navbar-custom .nav li.active a:hover {
+  color: #fff;
+}
+
+@media (min-width: 768px) {
+  .navbar-custom.top-nav-collapse {
+    padding: 0;
+  }
+}
+
+.btn-circle {
+  width: 70px;
+  height: 70px;
+  margin-top: 15px;
+  padding: 7px 16px;
+  border: 2px solid #fff;
+  border-radius: 100% !important;
+  font-size: 40px;
+  color: #fff;
+  background: 0 0;
+  -webkit-transition: background .3s ease-in-out;
+  -moz-transition: background .3s ease-in-out;
+  transition: background .3s ease-in-out;
+}
+
+.btn-circle:hover,
+.btn-circle:focus {
+  outline: 0;
+  color: #fff;
+  background: rgba(255, 255, 255, .1);
+}
+
+.btn-circle i.animated {
+  -webkit-transition-property: -webkit-transform;
+  -webkit-transition-duration: 1s;
+  -moz-transition-property: -moz-transform;
+  -moz-transition-duration: 1s;
+}
+
+.btn-circle:hover i.animated {
+  -webkit-animation-name: pulse;
+  -moz-animation-name: pulse;
+  -webkit-animation-duration: 1.5s;
+  -moz-animation-duration: 1.5s;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-timing-function: linear;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  50% {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@-moz-keyframes pulse {
+  0% {
+    -moz-transform: scale(1);
+    transform: scale(1);
+  }
+
+  50% {
+    -moz-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+
+  100% {
+    -moz-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+.btn {
+  border-radius: 0;
+  text-transform: uppercase;
+  font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.btn-default {
+  border: 1px solid #42dca3;
+  color: #42dca3;
+  background-color: transparent;
+}
+
+.btn-default:hover,
+.btn-default:focus {
+  border: 1px solid #42dca3;
+  outline: 0;
+  color: #000;
+  background-color: #42dca3;
+}
+
+ul.banner-social-buttons {
+  margin-top: 0;
+}
+
+::-moz-selection {
+  text-shadow: none;
+  background: #fcfcfc;
+  background: rgba(255, 255, 255, .2);
+}
+
+::selection {
+  text-shadow: none;
+  background: #fcfcfc;
+  background: rgba(255, 255, 255, .2);
+}
+
+img::selection {
+  background: 0 0;
+}
+
+img::-moz-selection {
+  background: 0 0;
+}
+
+.walter-intro {
+  padding-top: 100px;
+}
+
+.walter-side-bar {
+  position: fixed;
+  padding-top: 64px;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  width: 33%;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background-color: #f7f3f9;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.walter-side-bar a {
+  text-transform: uppercase;
+  white-space: nowrap;
+  overflow-x: hidden;
+  font-size: 1.2em;
+  text-overflow: ellipsis;
+}
+
+.walter-fixed-footer {
+  position: absolute;
+  bottom: 0;
+  left: 6px;
+  font-size: 11px;
+}
+
+.walter-page-content {
+  margin-left: 33%;
+  max-width: 900px;
+  padding: 15px;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+@media (max-width: 768px) {
+  .walter-side-bar {
+    width: 0 !important;
+  }
+
+  .walter-page-content {
+    margin-left: 0 !important;
+  }
+}
+
+/* anchorific styles */
+a.anchor {
+  display: block;
+  position: relative;
+  top: -64px;
+  height: 64px;
+  visibility: hidden;
+}
+
+.anchorific {
+  width: 340px;
+  overflow-y: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding: 0;
+  padding-right: 8px;
+  float: right;
+}
+
+.anchorific ul {
+  list-style-type: none;
+}
+
+.anchorific li ul {
+  list-style-type: none;
+  display: none;
+}
+
+.anchorific ul li a {
+  display: block;
+  text-decoration: none;
+  padding: 5px;
+}
+
+.anchorific li ul {
+  display: none;
+}
+
+.anchorific li.active > a {
+  font-weight: bold;
+  color: #69499a;
+}
+
+.anchorific li.active > ul {
+  display: block;
+}
