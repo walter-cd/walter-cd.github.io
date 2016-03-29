@@ -5,7 +5,9 @@ title: Home
 
 # Welcome to Walter
 
-Walter is a tiny deployment pipeline template. It automates the deployment process of applications or servers from configuration to software deployment.
+<img src="/img/walter-server-top.png" style="width: 75%;" />
+
+Walter is a tiny build/deployment pipeline tool. It automates the deployment process of applications or servers from configuration to software deployment.
 
 ## Status
 
@@ -13,6 +15,6 @@ Walter is a tiny deployment pipeline template. It automates the deployment proce
 
 ## Blogs
 
-* http://ainoya.io/walter
-* http://walter-cd.net
+* [http://ainoya.io/walter](http://ainoya.io/walter)
+* [http://walter-cd.net](http://walter-cd.net)
 
